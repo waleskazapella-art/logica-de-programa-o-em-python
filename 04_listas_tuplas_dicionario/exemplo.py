@@ -67,7 +67,7 @@ print(f"Média: {media}")
 
 
 #11 tuplas
-#semelhantes ás listas
+#semelhantes as listas
 #tuplas n alteram
 
 coordenadas = (10 , 20)
@@ -84,3 +84,44 @@ aluno = {
 }
 
 print(aluno)
+
+#13 acessa valores do dic
+
+print(aluno["nome"])
+print(aluno["idade"])
+print(aluno["nota"])
+
+#14. alterando
+
+aluno["nota"] = 9.0
+print(aluno)
+
+#15 adiciona novos dados
+
+aluno["curso"] = "Informatica"
+print(aluno)
+
+#16. Removendo dados
+del aluno["curso"]
+print(aluno)
+
+#17 percorrendo um dicionario
+
+for chave in aluno:
+    print(chave)
+
+#podemos acessar chave e valor ao mesmo tempo
+for chave, valor in aluno.items():
+    print(f"{chave}: {valor}")
+
+#18 verificando uma chave
+if "nome" in aluno:
+    print("A chave nome existe.")
+
+#19 dicionario com lista
+
+aluno = {
+    "Nome": "Maria",
+    "Notas": [8.0, 7.5, 9.0]
+}
+

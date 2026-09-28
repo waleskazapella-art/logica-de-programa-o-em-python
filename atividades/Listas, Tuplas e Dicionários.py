@@ -56,3 +56,9 @@ print(soma)
 media = soma/5
 print(media)
 
+if "10" in notas:
+    print("Existe nota 10 na lista")
+else:
+    print("Não existe nota 10 na lista")
+
+if
